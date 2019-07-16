@@ -4,7 +4,7 @@
     "description": "Type script",
     "main": "app.js",
     "scripts": {
-        "duild": "tsc -w",
+        "build": "tsc -w",
         "start": "lite-server"
     },
     "license": "ISC",

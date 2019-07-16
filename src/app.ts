@@ -3,12 +3,16 @@ class Message {
 
     constructor(text: string) {
         this.messageText = text;
+
+        console.log('test')
     }
 
-    showAlert() {
-        alert(this.messageText);
+    showAlert(): never {
+        throw new Error('memem');
     }
 }
 
-let text = new Message("hello world");
+const text = new Message("hello world");
 text.showAlert();
+
+let year: ( number | boolean)[] = [1, true];
